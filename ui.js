@@ -44,8 +44,8 @@ class UI {
               </div>
               <div class="col-md-6">
                 <span class="badge badge-primary">Stars: ${repo.stargazers_count}</span>
-                <span class="badge badge-secondary">Public Gists: ${repo.warchers_count}</span>
-                <span class="badge badge-success">Public Repos: ${repo.forms_count}</span>
+                <span class="badge badge-secondary">Watchers: ${repo.watchers_count}</span>
+                <span class="badge badge-success">Forks: ${repo.forms_count}</span>
               </div>
             </div>
           </div>
@@ -70,7 +70,6 @@ class UI {
         const container = document.querySelector('.searchContainer');
         // Get search box
         const search = document.querySelector('.search');
-        console.log(search);
         // Insert alert
         container.insertBefore(div, search);
         // Timeout after 3 sec
